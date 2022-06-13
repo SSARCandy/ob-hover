@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<style>
+  ul, li {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    font-family: monospace;
+  }
+
+  #ask:hover li:hover ~ li {
+    background-color: red;
+  }
+
+  #bid:hover li {
+    background-color: green;
+  }
+  #bid:hover li:hover ~ li {
+    background-color: initial;
+  }
+  </style>
+<body>
+  <div style="width: 50%; margin: 0 auto;">
+    <ul id="ask">
+      <li>ASK 5</li>
+      <li>ASK 4</li>
+      <li>ASK 3</li>
+      <li>ASK 2</li>
+      <li>ASK 1</li>
+    </ul>
+    <ul id="bid">
+      <li>BID 1</li>
+      <li>BID 2</li>
+      <li>BID 3</li>
+      <li>BID 4</li>
+      <li>BID 5</li>
+    </ul>
+  </div>
+</body>
+
